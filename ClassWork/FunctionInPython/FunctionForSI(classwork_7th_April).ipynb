@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNDsK4uFgyuZq2lCn/yhvBh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Shifa-parveen786/Data_Visualization/blob/main/ClassWork/FunctionInPython/FunctionForSI(classwork_7th_April).ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ihsv8OtUU_Aa",
+        "outputId": "45d3e024-6c03-4830-eba0-430ed34704fb"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter principal(in Rs):200\n",
+            "Enter rate(in %):30\n",
+            "Enter time(in year):10\n",
+            "Simple Interest : Rs 600.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "# create a function to calculate simple interest\n",
+        "#---------------------------------------------------------------\n",
+        "def calculatesi(p,r,t):\n",
+        "  return((p*r*t)/100)\n",
+        "# main program\n",
+        "#----------------------------------------------------------------------\n",
+        "principal = float(input(\"Enter principal(in Rs):\"))\n",
+        "rate = float(input(\"Enter rate(in %):\"))\n",
+        "time = int(input(\"Enter time(in year):\"))\n",
+        "print(\"Simple Interest : Rs\", calculatesi(principal, rate, time))"
+      ]
+    }
+  ]
+}
